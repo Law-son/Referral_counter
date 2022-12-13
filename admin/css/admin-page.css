@@ -1,0 +1,111 @@
+body{
+    background: url(../../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-container{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vw;
+    height: 25em;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.input-container{
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(26, 93, 120);
+    font-family: 'Courier New', Courier, monospace;
+    width: 20em;
+    height: 20em;
+    align-self: center;
+    display: flex;
+}
+
+.analytics{
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 4px solid rgb(26, 93, 120);
+    font-family: 'Courier New', Courier, monospace;
+    width: 20em;
+    height: 20em;
+    align-self: center;
+    color: rgb(26, 93, 120);
+}
+
+.input-container .long_url{
+    border: 2px solid rgb(26, 93, 120);
+    border-radius: 10px;
+    width: clamp(50px, 15vw, 50vw);
+    height: 2vw;
+    color: rgb(26, 93, 120);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 8%;
+    margin-top: 6vw;
+}
+
+.input-container .submit-btn{
+    border: 2px solid rgb(26, 93, 120);
+    border-radius: 10px;
+    width: clamp(50px, 15vw, 50vw);
+    height: 2vw;
+    color: rgb(26, 93, 120);
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 8%;
+    margin-top: 2vw;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid rgb(26, 93, 120);
+    box-shadow: 0 0 10px rgb(26, 93, 120);
+}
+
+.analytics .no-links{
+    margin-top: 4.5vw;
+}
+
+.analytics .no-clicks{
+    margin-top: 3.5vw;
+}
+
+@media screen and (max-width: 480px) {
+    .main-container{
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75vw;
+        height: 85%;
+    }
+    .input-container .long_url{
+        width: 60vw;
+        height: 8vw;
+        margin-left: 6%;
+        margin-top: 35vw;
+    }
+    .input-container .submit-btn{
+        width: 60vw;
+        height: 8vw;
+        margin-left: 6%;
+        margin-top: 10vw;
+    }
+    .analytics .no-links{
+        margin-top: 18vw;
+    }
+    
+    .analytics .no-clicks{
+        margin-top: 2vw;
+    }    
+}

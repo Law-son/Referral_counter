@@ -1,0 +1,108 @@
+body{
+    background: url(../../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login-container{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33vw;
+    height: 27vw;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container .container-title{
+    text-align: center;
+    align-self: center;
+    top: 10vw;
+    color: rgb(25, 93, 120);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login-container .email-field{
+    border: 2px solid rgb(26, 93, 120);
+    border-radius: 10px;
+    width: clamp(50px, 29vw, 50vw);
+    height: 2vw;
+    color: rgb(26, 93, 120);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5%;
+}
+
+
+.login-container .password-field{
+    border: 2px solid rgb(26, 93, 120);
+    border-radius: 10px;
+    width: clamp(50px, 29vw, 50vw);
+    height: 2vw;
+    color: rgb(26, 93, 120);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2vw;
+    margin-left: 5%;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid rgb(26, 93, 120);
+    box-shadow: 0 0 10px rgb(26, 93, 120);
+}
+
+.login-container .submit-btn{
+    margin-top: 0.6vw;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(26, 93, 120);
+    color: white;
+    width: clamp(50px, 29.5vw, 50vw);
+    height: 2.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2vw;
+    margin-left: 5%;
+}
+
+.error-message{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: red;
+}
+
+@media screen and (max-width: 480px) {
+    .login-container{
+        margin-top: 35%;
+        width: 80vw;
+        height: 95vw;
+    }
+    .login-container .container-title{
+        text-align: center;
+        align-self: center;
+        margin-top: 0;
+        color: rgb(25, 93, 120);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .login-container .email-field{
+        width: clamp(50px, 50vw, 50vw);
+        height: 7vw;
+        margin-left: 17%;
+    }
+    .login-container .password-field{
+        width: clamp(50px, 50vw, 50vw);
+        height: 7vw;
+        margin-left: 17%;
+    }
+    .login-container .submit-btn{
+        width: clamp(50px, 50vw, 50vw);
+        height: 7vw;
+        margin-left: 18.5%;
+    }
+    
+}

@@ -1,0 +1,193 @@
+body{
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(50px, 35vw, 50vw);
+    height: 26em;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container .sub-container1{
+    position: absolute;
+    top: 3.5em;
+    padding: 3.5px;
+    width: clamp(50px, 30vw, 50vw);
+    background-color: rgb(26, 93, 120);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-container .sub-container2{
+    position: absolute;
+    top: 8.5em;
+    padding: 3.5px;
+    width: clamp(50px, 30vw, 50vw);
+    background-color: white;
+    color: rgb(26, 93, 120);
+    border-radius: 10px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-container .sub-container3{
+    position: absolute;
+    top: 13em;
+    padding: 4px;
+    width: clamp(50px, 30vw, 50vw);
+    background-color: white;
+    color: rgb(26, 93, 120);
+    border-radius: 10px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-container .sub-container3 .username{
+    border: 2px solid rgb(26, 93, 120);
+    border-radius: 10px;
+    width: clamp(50px, 29vw, 50vw);
+    height: 2vw;
+    color: rgb(26, 93, 120);
+    font-size: large;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid rgb(26, 93, 120);
+    box-shadow: 0 0 10px rgb(26, 93, 120);
+}
+
+.main-container .sub-container3 .submit-btn{
+    margin-top: 0.6vw;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(26, 93, 120);
+    color: white;
+    width: clamp(50px, 30vw, 50vw);
+    height: 2.5vw;
+}
+
+.main-container .sub-container4{
+    position: absolute;
+    top: 20em;
+    padding: 4px;
+    width: clamp(50px, 30vw, 50vw);
+    background-color: white;
+    color: rgb(26, 93, 120);
+    border-radius: 10px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-container .sub-container4 .referral-link{
+    border: 2px solid rgb(26, 93, 120);
+    border-radius: 10px;
+    width: clamp(50px, 22vw, 50vw);
+    height: 2vw;
+    color: rgb(26, 93, 120);
+    font-size: large;
+}
+
+.main-container .sub-container4 .copy-btn{
+    /* margin-top: 0.6vw; */
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(26, 93, 120);
+    color: white;
+    width: clamp(50px, 7vw, 50vw);
+    height: 2.5vw;
+}
+
+.leader-board{
+    background-color: white;
+    border-radius: 10px;
+    width: 8rem;
+    height: 3rem;
+    color: rgb(26, 93, 120);
+    text-align: center;
+    border: 3px solid rgb(26, 93, 120);
+    z-index: 2;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    cursor:pointer;
+    box-shadow: 5px 5px 5px rgb(26, 93, 120);
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .main-container{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85vw;
+        height: 100vw;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-container .sub-container1{
+        top: 1.5em;
+        position: absolute;
+        margin-left: 0;
+        align-self: center;
+        padding: 3.5px;
+        width: 18em;
+    }
+    .main-container .sub-container2{
+        top: 6.3em;
+        align-self: center;
+        padding: 3.5px;
+        width: 18em;
+        padding: 2.5px;
+    }
+    .main-container .sub-container3{
+        top: 12em;
+        align-self: center;
+        padding: 3.5px;
+        width: 18em;
+        padding: 2.5px;
+    }
+    .main-container .sub-container4{
+        top: 18em;
+        align-self: center;
+        padding: 3.5px;
+        width: 18em;
+        padding: 2.5px;
+        height: 9vw;
+    }
+    .main-container .sub-container3 .username{
+        width: 62vw;
+        height: 8vw;
+        font-size: medium;
+    }
+    .main-container .sub-container3 .submit-btn{
+        margin-top: 1.5vw;
+        width: 64vw;
+        height: 9vw;
+    }
+    .main-container .sub-container4 .referral-link{
+        width: 42vw;
+        height: 8vw;
+        font-size: medium;
+    }
+    .main-container .sub-container4 .copy-btn{
+        margin-top: 1.5vw;
+        width: 19vw;
+        height: 9vw;
+    }
+  }
